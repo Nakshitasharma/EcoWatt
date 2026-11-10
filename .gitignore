@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+data/*.db
+data/bdg2_source/
+data/uploads/
+models/*.joblib
+reports/generated/
+.pytest_cache/

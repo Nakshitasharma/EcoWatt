@@ -1,0 +1,84 @@
+
+/* EcoWatt immersive command-center redesign */
+body.dashboard-mode{background:#06131d;color:#eaf5fa}
+body.dashboard-mode .sidebar{inset:0 0 auto 0;width:100%;height:58px;padding:0 22px;display:flex;flex-direction:row;align-items:center;background:rgba(4,14,25,.96);border-bottom:1px solid #1d536b;box-shadow:0 5px 24px #0006;z-index:50}
+body.dashboard-mode .sidebar .brand{padding:0 10px 0 0;min-width:190px;font-size:19px}
+body.dashboard-mode .sidebar .brand-mark{background:linear-gradient(135deg,#a5ff37,#00d9a6);color:#071a22;border:0;font-size:23px}
+body.dashboard-mode .sidebar .brand small{color:#6fa9bb}
+body.dashboard-mode .sidebar .workspace,body.dashboard-mode .sidebar .nav-label,body.dashboard-mode .sidebar .sidebar-bottom{display:none}
+body.dashboard-mode .sidebar nav{display:flex;align-items:center;gap:4px;flex:1;overflow-x:auto}
+body.dashboard-mode .sidebar .nav-link{white-space:nowrap;padding:9px 13px;margin:0;border-radius:8px;font-size:11px;color:#a9c2d1}
+body.dashboard-mode .sidebar .nav-link.active{background:linear-gradient(100deg,#183d75,#075b68);color:#fff;border:1px solid #23b8e6;box-shadow:0 0 15px #00c8ff44}
+body.dashboard-mode .sidebar .nav-link kbd,body.dashboard-mode .sidebar .nav-count{display:none}
+body.dashboard-mode .main{margin-left:0;padding-top:58px;background:#06131d;min-height:100vh}
+body.dashboard-mode .topbar{height:48px;padding:0 24px;background:#081a28eF;border-bottom:1px solid #16445a;color:#9ab8c9;position:sticky;top:58px;z-index:30}
+body.dashboard-mode .breadcrumbs{gap:10px}
+.header-brand-mark{font-size:20px;color:#b5ff42}.header-brand{font:800 15px var(--display);color:#f5fbff!important}.header-brand-sub{font:8px var(--mono);letter-spacing:1px;color:#69a9bd}
+body.dashboard-mode .top-actions{gap:13px}
+.voice-top-cta{display:flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid #16d9f4;border-radius:9px;background:linear-gradient(110deg,#073a5b,#075d67);color:#e9ffff;font-weight:700;font-size:11px;box-shadow:0 0 0 2px #00cfff20,0 0 20px #00d5ff55;animation:voiceGlow 2.8s ease-in-out infinite}
+.voice-top-mic{font-size:17px}.voice-wave{display:flex;align-items:center;gap:2px;height:16px}.voice-wave b{display:block;width:2px;height:5px;border-radius:3px;background:#54ffd0;animation:wave 1s ease-in-out infinite}.voice-wave b:nth-child(2){animation-delay:.12s;height:11px}.voice-wave b:nth-child(3){animation-delay:.24s;height:15px}.voice-wave b:nth-child(4){animation-delay:.36s;height:9px}.voice-wave b:nth-child(5){animation-delay:.48s}
+@keyframes wave{50%{transform:scaleY(.35);opacity:.6}}@keyframes voiceGlow{50%{box-shadow:0 0 0 3px #00d5ff1c,0 0 27px #00d5ff77}}
+body.dashboard-mode .page-wrap{max-width:none;padding:12px 14px 22px}
+body.dashboard-mode #page-overview .welcome-row{margin:0 4px 10px;min-height:38px}
+body.dashboard-mode #page-overview .welcome-row h1{font-size:18px;margin:0;color:#f3fbff}
+body.dashboard-mode #page-overview .welcome-row .subtitle{font-size:10px}
+body.dashboard-mode #page-overview .eyebrow{font-size:8px;color:#6ebbd0}
+body.dashboard-mode #page-overview .control-room{height:clamp(550px,calc(100vh - 250px),760px);min-height:550px;border:1px solid #1682a1;border-radius:13px;background:#061725 url('/assets/ecowatt-campus.png') center 49%/cover no-repeat;box-shadow:0 0 28px #00bfff20,inset 0 0 70px #00111d}
+body.dashboard-mode .control-landscape{display:none}
+body.dashboard-mode .landscape-wash{background:linear-gradient(90deg,rgba(2,13,22,.84),rgba(2,13,22,.14) 27%,rgba(2,13,22,.03) 58%,rgba(2,13,22,.82)),linear-gradient(0deg,rgba(2,12,20,.9),transparent 25%,rgba(2,12,20,.12) 76%,rgba(2,12,20,.35))}
+body.dashboard-mode .scene-glass{top:15px;width:230px;padding:13px 14px;background:linear-gradient(150deg,rgba(4,20,32,.94),rgba(4,15,25,.88));border:1px solid #2695b7;border-radius:10px;box-shadow:0 0 19px #00bfff25,0 14px 35px #0008;backdrop-filter:blur(14px)}
+body.dashboard-mode .scene-left{left:14px}
+body.dashboard-mode .scene-right{right:14px;width:240px}
+body.dashboard-mode .scene-card-head{font-size:10px;color:#e1f6ff}
+body.dashboard-mode .scene-kpi-label,body.dashboard-mode .scene-stat>span{color:#8dbbca;font-size:8px}
+body.dashboard-mode .scene-kpi b{font-size:36px}
+body.dashboard-mode .scene-inline{font-size:9px}
+body.dashboard-mode .scene-inline b{color:#5bf0b0}
+body.dashboard-mode .scene-stat>b{font-size:25px}
+body.dashboard-mode .scene-center-title{top:34%;width:290px;gap:7px;text-shadow:0 2px 16px #001}
+body.dashboard-mode .scene-center-title>span{color:#7af5ee;font-size:9px}
+body.dashboard-mode .scene-center-title>b{font-size:clamp(20px,2.1vw,29px);text-shadow:0 0 20px #00dfff}
+body.dashboard-mode .scene-center-title>small{font-size:8px}
+body.dashboard-mode .scene-voice-cta{display:flex;align-items:center;gap:10px;margin-top:6px;padding:9px 15px;border:1px solid #00d7ff;border-radius:9px;background:linear-gradient(110deg,#06395b,#075c66);color:#fff;box-shadow:0 0 20px #00dfff55;cursor:pointer}
+body.dashboard-mode .scene-voice-cta .scene-voice-icon{font-size:20px}
+body.dashboard-mode .scene-voice-cta b{display:block;font-size:11px}
+body.dashboard-mode .scene-voice-cta small{display:block;color:#9be8e7;font-size:8px}
+body.dashboard-mode .scene-voice-cta>i{font-style:normal;color:#66ffe0}
+body.dashboard-mode .scene-micro-label{background:#041b29df;border-color:#21b9d9aa;box-shadow:0 0 20px #00dfff3b;color:#e8fbff}
+body.dashboard-mode .scene-micro-label i{width:34px;height:34px;font-size:17px;color:#75f6f1;box-shadow:0 0 12px #00eaff55}
+body.dashboard-mode .forecast-node{left:30%;top:38%}
+body.dashboard-mode .anomaly-node{right:29%;top:37%}
+body.dashboard-mode .scenario-node{left:44%;bottom:14%}
+body.dashboard-mode .scene-bottom-label{color:#a8d8e3}
+body.dashboard-mode .scene-empty{background:#061a26e8;border:1px solid #25bad2;border-radius:9px;backdrop-filter:blur(12px);color:#eafcff}
+body.dashboard-mode .scene-insights{margin:10px 0 0;padding:12px;border:1px solid #1b6a85;border-radius:10px;background:linear-gradient(120deg,#071a28,#0b2431);box-shadow:0 10px 28px #0005}
+body.dashboard-mode .scene-section-title h2{color:#eaf8ff;font-size:15px}
+body.dashboard-mode .scene-insight-grid{gap:9px}
+body.dashboard-mode .scene-insight-card{background:linear-gradient(145deg,#0c2938,#081b29);border:1px solid #1b637a;border-radius:8px;color:#d9f2f6;padding:11px}
+body.dashboard-mode .scene-insight-card b{color:#64e9ef;font-size:9px}
+body.dashboard-mode .scene-insight-card p{color:#a6c3cc;font-size:10px}
+body.dashboard-mode .quick-actions{background:#071b28;border-color:#1d6279}
+body.dashboard-mode .quick-actions button{background:#0c2a38;border-color:#1b7188;color:#bceefa}
+body.dashboard-mode #page-overview>.notice,body.dashboard-mode #page-overview>.section-heading,body.dashboard-mode #page-overview>.metric-grid,body.dashboard-mode #page-overview>.content-grid,body.dashboard-mode #page-overview>.bottom-grid{display:none!important}
+body.dashboard-mode .footer{color:#6895a6}
+body.dark .voice-top-cta{color:#fff}
+body:not(.dark).dashboard-mode{background:#eaf3f8;color:#153044}
+body:not(.dark).dashboard-mode .main{background:#eaf3f8}
+body:not(.dark).dashboard-mode .topbar{background:#f5fbff;border-color:#c4dce7;color:#527185}
+body:not(.dark).dashboard-mode .sidebar{background:#f8fcff;border-color:#b9d9e8;box-shadow:0 4px 20px #24516a22}
+body:not(.dark).dashboard-mode .sidebar .brand,body:not(.dark).dashboard-mode .sidebar .nav-link{color:#24485b}
+body:not(.dark).dashboard-mode .sidebar .nav-link.active{color:#fff}
+body:not(.dark).dashboard-mode .control-room{border-color:#8ac6d9;box-shadow:0 12px 35px #39728b25}
+body:not(.dark).dashboard-mode .scene-glass{background:linear-gradient(150deg,rgba(239,250,255,.94),rgba(220,241,248,.9));color:#12384b;border-color:#80bfd2}
+body:not(.dark).dashboard-mode .scene-card-head,body:not(.dark).dashboard-mode .scene-kpi b,body:not(.dark).dashboard-mode .scene-stat>b{color:#153b4e}
+body:not(.dark).dashboard-mode .scene-kpi-label,body:not(.dark).dashboard-mode .scene-stat>span,body:not(.dark).dashboard-mode .scene-inline{color:#4c7b8d}
+body:not(.dark).dashboard-mode .scene-inline b{color:#087d59}
+body:not(.dark).dashboard-mode .scene-stat>small{color:#52798a}
+body:not(.dark).dashboard-mode .scene-insights{background:#f5fbff;border-color:#b6dce8}
+body:not(.dark).dashboard-mode .scene-section-title h2{color:#173d50}
+body:not(.dark).dashboard-mode .scene-insight-card{background:#fff;border-color:#c5e2ec;color:#24495a}
+body:not(.dark).dashboard-mode .scene-insight-card p{color:#557586}
+body:not(.dark).dashboard-mode .quick-actions{background:#f4fbff;border-color:#c1dce8}
+body:not(.dark).dashboard-mode .quick-actions button{background:#fff;color:#28576c;border-color:#b5d7e5}
+@media(max-width:1000px){body.dashboard-mode .sidebar{padding:0 10px}body.dashboard-mode .sidebar .brand{min-width:140px}body.dashboard-mode .sidebar .nav-link{padding:8px 9px;font-size:10px}body.dashboard-mode .scene-glass{width:190px}body.dashboard-mode .scene-right{width:195px}body.dashboard-mode .scene-center-title{top:39%}}
+@media(max-width:720px){body.dashboard-mode .sidebar{height:auto;min-height:58px;flex-wrap:wrap;position:sticky;padding:7px 10px}body.dashboard-mode .sidebar nav{order:3;width:100%;flex-basis:100%;padding:5px 0}body.dashboard-mode .sidebar .brand{min-width:0;flex:1}body.dashboard-mode .main{padding-top:0}body.dashboard-mode .topbar{top:90px;padding:0 10px}body.dashboard-mode .top-actions .live-status{display:none}body.dashboard-mode .page-wrap{padding:8px}body.dashboard-mode #page-overview .welcome-row{align-items:flex-start}body.dashboard-mode #page-overview .welcome-tools{gap:5px}body.dashboard-mode .control-room{height:auto;min-height:920px;background-position:center;background-size:auto 100%}body.dashboard-mode .scene-glass{top:12px;width:calc(50% - 17px);padding:9px}.scene-left{left:8px!important}.scene-right{right:8px!important}body.dashboard-mode .scene-center-title{top:43%;width:90%}body.dashboard-mode .forecast-node{left:8%;top:35%}body.dashboard-mode .anomaly-node{right:6%;top:35%}body.dashboard-mode .scenario-node{left:35%;bottom:12%}body.dashboard-mode .scene-insight-grid{grid-template-columns:1fr 1fr}body.dashboard-mode .scene-insight-card{min-height:95px}.voice-top-cta{padding:6px 9px;font-size:9px}}

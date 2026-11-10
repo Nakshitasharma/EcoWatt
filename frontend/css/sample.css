@@ -1,0 +1,9 @@
+.sample-callout{display:flex;align-items:center;gap:8px;background:#f5f8f6;border:1px solid var(--line);border-radius:5px;padding:8px;margin:10px 0}.sample-callout>span{font:9px var(--mono);background:#e4f1e8;color:#397c55;padding:5px;border-radius:3px}.sample-callout div{display:flex;flex-direction:column;flex:1;min-width:100px}.sample-callout b{font-size:9px}.sample-callout small{font-size:8px;color:#8a9790}.sample-callout .text-button{white-space:nowrap;font-size:9px}body.dark .sample-callout{background:#202c26}
+.speech-button{display:inline-flex;align-items:center;margin-top:6px;border:1px solid var(--line);background:var(--panel);border-radius:4px;color:#557862;padding:4px 7px;font-size:8px}.speech-button:hover{border-color:#9bbca5}
+
+/* Keep the floating voice launcher clear of the CSV review actions. The topbar voice CTA remains available. */
+body.csv-review-active .floating-assistant{display:none!important}
+body.csv-review-active #csv-mapping{padding-bottom:12px}
+body.csv-review-active .csv-actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px}
+body.csv-review-active .csv-actions .button{min-width:112px}
+@media(max-width:560px){body.csv-review-active .csv-actions{display:grid;grid-template-columns:1fr 1.35fr}body.csv-review-active .csv-actions .button{width:100%;justify-content:center}}

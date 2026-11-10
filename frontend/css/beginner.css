@@ -1,0 +1,47 @@
+/* Beginner-friendly guidance layer: additive styles, existing dashboard behavior is unchanged. */
+.beginner-guide{margin:0 0 16px;padding:16px 18px;border:1px solid #1e6474;border-radius:13px;background:linear-gradient(120deg,rgba(7,34,45,.96),rgba(9,27,38,.94));box-shadow:0 8px 24px rgba(0,0,0,.12);color:#e7f7f8}
+.beginner-guide-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:13px}
+.beginner-kicker{font-size:9px;letter-spacing:.15em;font-weight:800;color:#5de5d8}
+.beginner-guide h2{font-size:18px;margin:4px 0 3px;color:inherit}
+.beginner-guide-head p,.beginner-step p{margin:0;color:#a9c3c9;font-size:12px;line-height:1.5}
+.guide-toggle{border:1px solid #397783;border-radius:8px;background:#102d39;color:#c8eef0;padding:7px 10px;font-size:11px;cursor:pointer;white-space:nowrap}
+.beginner-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.beginner-step{display:grid;grid-template-columns:30px 1fr;gap:8px;align-items:start;min-height:116px;padding:12px;border:1px solid #245365;border-radius:10px;background:rgba(12,49,61,.72)}
+.step-number{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#123e4c;border:1px solid #31c9c4;color:#8ff8ec;font-size:12px;font-weight:800}
+.beginner-step b{display:block;font-size:12px;color:#f2ffff;margin:2px 0 4px}
+.beginner-step small{display:block;margin-top:7px;color:#76c9c9;font-size:8px;letter-spacing:.06em}
+.guide-action{grid-column:2;justify-self:start;margin-top:3px;padding:6px 9px;border:1px solid #258c94;border-radius:7px;background:#0d5660;color:#e9ffff;font-size:10px;font-weight:700;cursor:pointer}
+.guide-action:hover,.guide-toggle:hover{filter:brightness(1.15)}
+.guide-action span{margin-left:5px}
+.beginner-step.completed{border-color:#238d68;background:rgba(11,65,51,.55)}
+.beginner-step.completed .step-number{background:#176344;border-color:#45d89c;color:#fff}
+.beginner-guide-foot{margin-top:11px;padding-top:9px;border-top:1px solid #24505b;color:#94b9be;font-size:10px}
+.beginner-guide.guide-collapsed .beginner-steps,.beginner-guide.guide-collapsed .beginner-guide-foot{display:none}
+.beginner-guide.guide-collapsed{padding-bottom:12px}
+.beginner-tip{display:flex;flex-direction:column;gap:4px;margin:0 0 12px;padding:10px 12px;border-left:3px solid #45d9bd;border-radius:7px;background:rgba(52,180,145,.09);color:var(--text,#dcece7)}
+.beginner-tip b{font-size:11px;color:#55dcbc}
+.beginner-tip span{font-size:11px;line-height:1.55;color:var(--muted,#a3b8b0)}
+.beginner-inline-help{margin:0 0 12px;color:var(--muted,#a3b8b0);font-size:11px;line-height:1.5}
+.field-hint{display:block;color:var(--muted,#91aaa0);font-size:9px;font-weight:400;margin:3px 0}
+.voice-howto{margin:0 0 12px}
+body:not(.dark) .beginner-guide{background:linear-gradient(120deg,#f2fbff,#eaf6fa);border-color:#b7dce6;color:#173d50;box-shadow:0 8px 24px #244f6810}
+body:not(.dark) .beginner-guide-head p,body:not(.dark) .beginner-step p{color:#587789}
+body:not(.dark) .beginner-step{background:#fff;border-color:#c8e1e9}
+body:not(.dark) .beginner-step b{color:#173d50}
+body:not(.dark) .step-number{background:#e2f8f4;color:#087d72;border-color:#82d9ce}
+body:not(.dark) .beginner-step.completed{background:#edfbf4;border-color:#9ed9b8}
+body:not(.dark) .guide-toggle{background:#fff;color:#315b6d;border-color:#b9d9e4}
+body:not(.dark) .beginner-guide-foot{border-color:#c8e1e9;color:#638394}
+body:not(.dark) .beginner-tip{background:#eef9f4}
+@media(max-width:900px){.beginner-steps{grid-template-columns:1fr}.beginner-step{min-height:0;grid-template-columns:30px 1fr}.guide-action{grid-column:2}.beginner-guide{padding:13px}}
+.beginner-dialog{width:min(440px,calc(100% - 28px));padding:0;border:1px solid #27788a;border-radius:15px;background:#0c2029;color:#eaf7f8;box-shadow:0 24px 80px #0009}
+.beginner-dialog::backdrop{background:#02090dcc;backdrop-filter:blur(4px)}
+.beginner-dialog form{display:grid;gap:12px;padding:22px}
+.dialog-kicker{font-size:9px;letter-spacing:.15em;color:#57d9c8;font-weight:800}
+.beginner-dialog h2{margin:0;font-size:22px}.beginner-dialog p{margin:-6px 0 4px;color:#9eb9bd;font-size:12px}
+.beginner-dialog label{display:grid;gap:6px;font-size:11px;color:#b8d1d4}
+.beginner-dialog input,.beginner-dialog select{width:100%;padding:11px;border:1px solid #315661;border-radius:8px;background:#102d37;color:#f2ffff;font:inherit}
+.dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:5px}
+body:not(.dark) .beginner-dialog{background:#f8fdff;color:#173d50;border-color:#b5dce7}
+body:not(.dark) .beginner-dialog p,body:not(.dark) .beginner-dialog label{color:#54778a}
+body:not(.dark) .beginner-dialog input,body:not(.dark) .beginner-dialog select{background:#fff;color:#173d50;border-color:#c4dce6}

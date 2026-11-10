@@ -1,0 +1,1 @@
+"""EcoWatt backend package."""
